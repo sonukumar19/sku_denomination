@@ -1,0 +1,90 @@
+/* Global css start */
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+a:hover, a:focus {
+  outline: none;
+  text-decoration: none;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.paad-none {
+  padding-right: 0;
+}
+.pd-none{
+  padding: 0;
+}
+.pd-lft-nn{
+  padding-left: 0;
+}
+.pd-rgt-nn{
+  padding-right: 0;
+}
+
+/* Global css end */
+
+main {
+    margin-bottom: 50px;
+}
+
+header {
+  background: #007cbb;
+}
+
+.navbar {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+}
+.navbar-brand {
+  height: auto;
+}
+
+
+
+/* add links header end*/
+
+/* Media Start */
+
+.sprite {
+  background: url(image_path('download.png')) no-repeat 10px center rgba(0,0,0,0);
+  border-radius: 8px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1px solid #aaa;
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: auto;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "style";

@@ -1,0 +1,98 @@
+/* Global css start */
+
+/* Global css start */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+a:hover, a:focus {
+  outline: none;
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+img {
+  max-width: 100%;
+}
+.paad-none {
+  padding-right: 0;
+}
+.pd-none{
+  padding: 0;
+}
+.pd-lft-nn{
+  padding-left: 0;
+}
+.pd-rgt-nn{
+  padding-right: 0;
+}
+
+/* Global css end */
+
+main {
+    margin-bottom: 50px;
+}
+
+header {
+  background: #007cbb;
+}
+
+.navbar {
+  border-radius: 0;
+  -webkit-border-radius: 0;
+  border: none;
+  margin-bottom: 0;
+  background-color: #06067d;
+}
+.navbar-brand {
+  height: auto;
+}
+.dropdown-toggle {
+  color: #fff;
+}
+.btn-gradient i {
+  font-size: 35px;
+  vertical-align: middle; 
+  padding-right: 5px;
+}
+
+.sku_creation{
+  margin-left: 210px;
+  padding-bottom: 30px;
+}
+
+
+/* add links header end*/
+
+/* Media Start */
+
+.sprite {
+  border-radius: 8px;
+  margin-right: 4px;
+  background-repeat: no-repeat;
+  background-color: white;
+  border: 1px solid #aaa;
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  margin: auto;
+}
+
+.sprite-sign-in-twitter{
+  background: url(/assets/twitter.png);
+}
+.sprite-sign-in-facebook{
+  background: url(/assets/facebook.png);
+}
+.sprite-sign-in-google{
+  background: url(/assets/google.png);
+}
+.mandatory{
+  color: red;
+}

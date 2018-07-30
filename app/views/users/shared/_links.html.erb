@@ -1,0 +1,20 @@
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' && controller_name != 'registrations' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+<% end -%>
+
+<%- if devise_mapping.confirmable? && controller_name != 'confirmations' %>
+  <%= link_to "Didn't receive confirmation instructions?", new_confirmation_path(resource_name) %><br />
+<% end -%>
+
+<%- if devise_mapping.omniauthable? %>
+  <%- resource_class.omniauth_providers.each do |provider| %>
+  	<% if provider.eql?(:facebook) %>
+    	<%= link_to "", omniauth_authorize_path(resource_name, provider), :class => "sprite sprite-sign-in-facebook" %>
+    <% elsif provider.eql?(:twitter) %>
+    	<%= link_to "", omniauth_authorize_path(resource_name, provider), :class => "sprite sprite-sign-in-twitter" %>
+    <% else %>
+    	<%= link_to "", omniauth_authorize_path(resource_name, provider), :class => "sprite sprite-sign-in-google" %>
+    <% end %>
+    		
+  <% end -%>
+<% end -%>

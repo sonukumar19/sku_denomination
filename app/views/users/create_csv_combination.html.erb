@@ -1,0 +1,23 @@
+<table class="table table-bordered sku_combination-table" >
+  <thead>
+    <tr>
+      <th>SKU Denomination</th>
+      <th>SKU Combination</th>
+    </tr>
+  </thead>
+  <tbody class='org_tbody'>
+    <% debugger %>
+    <% @combinations.each do |comb| %>
+      <tr>
+        <td><%= comb.sku_denomination %> </td>
+        <td><%= comb.sku_combination %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+<script type="text/javascript">
+  //show datatable for organization
+  $('.sku_combination-table').dataTable({
+    "sPaginationType": "bs_normal"
+  });
+</script>

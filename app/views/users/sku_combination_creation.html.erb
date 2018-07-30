@@ -1,0 +1,23 @@
+<div class="container container-position">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel" align="center"><strong>Create SKU Combination</strong></h5>
+      </div>
+      <div class="sku_creation">
+        <%= form_tag(create_csv_combination_users_path, {:multipart => true}) do %>
+          <div class="form-group">
+            <h3>UPLOAD A CSV<span class="mandatory">*</span></h3>
+            <%= file_field_tag 'file', required: true, accept: '.csv' %>
+          </div>
+
+          <div class="form-group">
+            <h3>SKU DENOMINATION<span class="mandatory">*</span></h3>
+            <input type="text" id="sku_denomination_number" required= "true" name="sku_denomination_number">
+          </div><br>
+          <button type="submit" class="btn btn-success">Submit</button>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
